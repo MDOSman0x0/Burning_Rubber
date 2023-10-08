@@ -1,0 +1,8 @@
+h1.about-title {
+    background-color: rgb(109, 6, 6);
+    background-blend-mode: luminosity;
+    text-align-last: center;
+    color:rgba(232, 138, 6, 0.892);
+    padding: 40px;
+    margin: 0px;
+}
