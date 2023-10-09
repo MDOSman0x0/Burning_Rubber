@@ -1,12 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 h1.about-title {
     background-color: rgb(109, 6, 6);
     background-blend-mode: luminosity;
     text-align-last: center;
     color:rgba(232, 138, 6, 0.892);
-    padding: 40px;
+    padding: 20px;
     margin: 0px;
 }
 
+h2 {
+    margin: 1% 5px;
+    padding: 1% 5px;
+}
+
+#whoWeAre_desc {
+    margin: 1% 20px; 
+}
 
 nav ul {
     background-color: black;
