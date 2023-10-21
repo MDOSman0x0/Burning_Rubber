@@ -10,6 +10,57 @@
 </head>
 
 <body>
+    <h1 class="about-title">BURNING RUBBER</h1>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Dealership</a></li>
+        <li><a href="#">Inquiry</a></li>
+        <li><a href="about.html">About Us </a></li>
+        </ul>
+    </nav>
+
+    <h2> Dealership Address </h2>
+        <div id = "Address Information">
+            <p1>
+               1234 Buy Your Car Here Road
+            </p1>
+        </div>
+
+        <h2> Phone Number </h2>
+        <div id = "Phone Information">
+            <p1>
+               (858) 999-1200  
+            </p1>
+        </div>
+
+<br>
+
+<h2> Email Inquiry</h2>
+
+<form action = "process.php" method = "post">
+    <div>
+        <label> Full Name </label>
+        <input type="text" name = "fullName">
+        <br>
+        <label> Email </label>
+        <input type="text" name = "emailAddress">
+        <br>
+        <label> Budget </label>
+        <input type="text" name = "budgetNumber">
+        <br>
+        <label> Important Details </label>
+        <textarea name = "extraDetails"></textarea>
+        <br>
+        <input type="submit">
+
+    </div>
+
+
+</form>
+
+
 </body>
 
 </html>
