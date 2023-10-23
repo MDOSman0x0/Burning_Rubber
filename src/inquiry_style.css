@@ -39,7 +39,6 @@ nav li {
     float: left;
 }
 
-
 h2.address{
     text-align: center;
     padding: 20px;
@@ -54,7 +53,9 @@ h2.phone{
 
 h2.email{
     padding: 5px;
+    padding-top: 20px;
     font-size:xx-large;
+    background-color: aliceblue;
 }
 
 #Address-Information{
@@ -78,6 +79,7 @@ form {
 label{
     font-style: italic;
 }
+
 
 input[type = "text"] {
     margin-bottom: 30px;
