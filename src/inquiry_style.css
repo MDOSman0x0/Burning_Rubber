@@ -92,7 +92,7 @@ input[type = "text"] {
     width: 100px;
     padding: 10px;
     border:1px solid black;
-    background-color:rgb(150, 80, 80); 
+    background-color: orange; 
     font-weight: bold;
     color: white
 }
@@ -111,5 +111,9 @@ textarea{
 }
 
 .error{
-    color: red;
+    color: white;
+    background-color:red;
+    margin-top: 10px;
+    padding: 10px;
+    border:1px solid black;
 }
