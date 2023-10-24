@@ -87,7 +87,29 @@ input[type = "text"] {
     width: 50%;
 }
 
-input[type = "submit"] {
-    margin-top: 30px;
-    width: 80%
+.btn[type = "submit"]{
+    margin-top: 20px;
+    width: 100px;
+    padding: 10px;
+    border:1px solid black;
+    background-color:rgb(150, 80, 80); 
+    font-weight: bold;
+    color: white
+}
+
+.btn:hover{
+    background-color: green;
+}
+
+textarea{
+    width: 50%;
+    padding: 30px;
+}
+
+.message{
+    padding: 10px;
+}
+
+.error{
+    color: red;
 }

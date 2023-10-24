@@ -39,28 +39,36 @@
 
 <h2 class="email"> Email Inquiry</h2>
 
-<form action = "process.php" method = "post">
+<form id ="inquiry-form">
     <div>
         <label> Full Name </label>
-        <input type="text" name = "fullName">
-        <br>
+        <input type="text" id = "fullName">
+    </div>
+        
+    <div>
         <label> Email </label>
-        <input type="text" name = "emailAddress">
-        <br>
+        <input type="text" id = "emailAddress">
+    </div>
+    
+    <div>
         <label> Budget </label>
-        <input type="text" name = "budgetNumber">
-        <br>
+        <input type="text" id = "budgetNumber">
+    </div>
+
+    <div>
         <label> Important Details </label>
         <textarea name = "extraDetails"></textarea>
-        <br>
-        <input type="submit">
+    </div>
 
+        <input class ="btn" type="submit" value = "Send Email">
+        <div class = "message"></div>
+        
     </div>
 
 
 </form>
 
-
+<script src = "inquiry.js"></script>
 </body>
 
 </html>
