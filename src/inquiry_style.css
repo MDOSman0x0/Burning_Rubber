@@ -42,31 +42,19 @@ nav li {
 h2.address{
     text-align: center;
     padding: 20px;
-    background-color: aliceblue;
 }
 
 h2.phone{
     text-align: center;
     padding: 20px;
-    background-color: aliceblue;
-}
-
-h2.email{
-    padding: 5px;
-    padding-top: 20px;
-    font-size:xx-large;
-    background-color: aliceblue;
 }
 
 #Address-Information{
     text-align: center;
-    background-color: aliceblue;
 }
 
 #Phone-Information {
     text-align: center;
-    background-color: aliceblue;
-    
 }
 
 form {
@@ -81,10 +69,27 @@ label{
 }
 
 
-input[type = "text"] {
+input[type = "text"][id = "fullName"] {
     margin-bottom: 30px;
     margin-left: 10px;
     width: 50%;
+}
+
+input[type = "text"][id = "emailAddress"] {
+    margin-bottom: 30px;
+    margin-left: 45px;
+    width: 50%;
+}
+
+input[type = "text"][id = "budgetNumber"] {
+    margin-bottom: 30px;
+    margin-left: 40px;
+    width: 50%;
+}
+
+textarea[name = "extraDetails"]{
+    width: 50%;
+    margin-right: 30px;
 }
 
 .btn[type = "submit"]{
@@ -95,10 +100,6 @@ input[type = "text"] {
     background-color: orange; 
     font-weight: bold;
     color: white
-}
-
-.btn:hover{
-    background-color: green;
 }
 
 textarea{
@@ -116,10 +117,5 @@ textarea{
     margin-top: 10px;
     padding: 10px;
     border:1px solid black;
-}
-
-footer{
-    text-align: center;
-    margin: 5%;
 }
 
