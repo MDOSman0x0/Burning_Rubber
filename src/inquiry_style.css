@@ -8,36 +8,37 @@ h1.about-title {
     background-blend-mode: luminosity;
     text-align-last: center;
     color:rgba(237, 216, 186, 0.892);
-    padding: 20px;
+    padding: 3%;
     margin: 0px;
 }
 
-nav ul {
+/* Navbar Start */
+
+nav {
     background-color: black;
     background-image: url(fire_banner.png);
-    background-size: contain;
+    background-position-y: bottom;
+    background-size: 100px;
     background-repeat: repeat-x;
-    list-style-type: none;
-    overflow: hidden;
 }
 
-nav li a {
-    display: block;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: larger;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+#tabDealership:hover {
+    color: red;
 }
 
-nav li a:hover {
-    background-color: red;
+#tabInquiry:hover {
+    color: red;
 }
 
-nav li {
-    float: left;
+#tabReview:hover {
+    color: red;
 }
+
+#tabAbout:hover {
+    color: red;
+}
+
+/* Navbar End */
 
 h2.address{
     text-align: center;
