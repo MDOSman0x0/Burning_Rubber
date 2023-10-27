@@ -12,40 +12,45 @@ h1.about-title {
     margin: 0px;
 }
 
-/* Navbar start */
+/* Navbar Start */
 
-nav ul {
+nav {
     background-color: black;
     background-image: url(fire_banner.png);
     background-position-y: bottom;
-    background-size: 10%;
+    background-size: 100px;
     background-repeat: repeat-x;
-    list-style-type: none;
-    overflow: hidden;
 }
 
-nav li {
-    float: left;
+#tabDealership:hover {
+    color: red;
 }
 
-nav li a {
-    display: block;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: larger;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+#tabInquiry:hover {
+    color: red;
 }
 
-nav li a:hover {
-    background-color: red;
+#tabReview:hover {
+    color: red;
 }
 
-/* Navbar End*/
+#tabAbout:hover {
+    color: red;
+}
+
+/* Navbar End */
+
+#featuredVehicles {
+    background-color: rgb(255, 124, 124);
+}
+
+/* Carosel Start */
 
 #carShowcase {
-    padding: 30px;
-    padding-top: 0px;
-    padding-bottom: 500px;
+    padding-right: 0px; 
+    padding-left: 0px;
+    margin-bottom: 500px;
+    height: 50%;
 }
+
+/* Carosel End */

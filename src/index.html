@@ -11,21 +11,46 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </head>
 
-<h1 class="about-title">
+<div1>
+  <h1 class="about-title">
     <img src="burning_rubber_full.png" alt="Logo" width="3%" height="3%" class="d-inline-block align-text-top">
     BURNING RUBBER
-</h1>
+  </h1>
+</div1>
 
-<!-- Navigation Bar -->
-<nav class="navbar sticky-top">
-    <ul>
-        <li><a href="index.html">Home</a></li>   
-        <li><a href="shop.html">Dealership</a></li>
-        <li><a href="inquiry.html">Inquiry</a></li>
-        <li><a href="review.html">Review</a></li>
-        <li><a href="about.html">About Us </a></li>
-    </ul>
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="dark">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navBar">
+      <ul class="navbar-nav me-auto mb-2 mg-lb-0">
+        <li class="nav-item">
+          <a id="tabHome" class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a id="tabDealership" class="nav-link" href="shop.html">Dealership</a>
+        </li>
+        <li class="nav-item">
+          <a id="tabInquiry" class="nav-link" href="inquiry.html">Inquiry</a>
+        </li>
+        <li class="nav-item">
+          <a id="tabReview" class="nav-link" href="review.html">Review</a>
+        </li>
+        <li class="nav-item">
+          <a id="tabAbout" class="nav-link" href="about.html">About Us</a>
+        </li>
+      </ul>
+      <button id="loginBtn" class="btn btn-outline-danger" type="menu">Login</button>
+    </div>
+  </div>
 </nav>
+
+<div id="featuredVehicles" class="container-fluid d-inline-flex p-2 justify-content-center">
+  <h1 class="border-5">
+    Featured Vehicles
+  </h1>
+</div>
 
 <div id="carShowcase" class="carousel slide carousel-fade">
     <div class="carousel-indicators">
@@ -35,21 +60,21 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="toyota_hilux.jpg" class="d-block w-100" alt="...">
+        <img src="toyota_hilux.jpg" class="d-block w-100 rounded" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>This is a Toyota Hilux</h5>
           <p>Invincible</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="forerunner.jpg" class="d-block w-100" alt="...">
+        <img src="forerunner.jpg" class="d-block w-100 rounded" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>Toyota Forerunner</h5>
           <p>Invincible</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="lambo_tractor.jpg" class="d-block w-100" alt="...">
+        <img src="lambo_tractor.jpg" class="d-block w-100 rounded" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>Lambourghini Tractor</h5>
           <p>Fucking Tractor</p>
