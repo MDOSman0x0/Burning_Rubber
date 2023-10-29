@@ -1,0 +1,14 @@
+#featuredVehicles {
+    background-color: rgb(255, 124, 124);
+}
+
+/* Carosel Start */
+
+#carShowcase {
+    padding-right: 0px; 
+    padding-left: 0px;
+    margin-bottom: 250px;
+    height: 50%;
+}
+
+/* Carosel End */
