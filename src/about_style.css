@@ -21,7 +21,35 @@ h2 {
     margin: 1% 20px; 
 }
 
-nav ul {
+/* Navbar Start */
+
+nav {
+    background-color: black;
+    background-image: url(fire_banner.png);
+    background-position-y: bottom;
+    background-size: 100px;
+    background-repeat: repeat-x;
+}
+
+#tabDealership:hover {
+    color: red;
+}
+
+#tabInquiry:hover {
+    color: red;
+}
+
+#tabReview:hover {
+    color: red;
+}
+
+#tabHome:hover {
+    color: red;
+}
+
+/* Navbar End */
+
+/* nav ul {
     background-color: black;
     background-image: url(fire_banner.png);
     background-size: contain;
@@ -46,4 +74,4 @@ nav li a {
 
 nav li a:hover {
     background-color: red;
-}
+} */
