@@ -32,10 +32,10 @@
           <a id="tabDealership" class="nav-link" href="shop.html">Dealership</a>
         </li>
         <li class="nav-item">
-          <a id="tabInquiry" class="nav-link active" aria-current="page" href="inquiry.html">Inquiry</a>
+          <a id="tabInquiry" class="nav-link" href="inquiry.html">Inquiry</a>
         </li>
         <li class="nav-item">
-          <a id="tabReview" class="nav-link" href="review.html">Review</a>
+          <a id="tabReview" class="nav-link active" aria-current="page" href="review.html">Review</a>
         </li>
         <li class="nav-item">
           <a id="tabAbout" class="nav-link" href="about.html">About Us</a>
@@ -48,22 +48,73 @@
 
 <section class = "container"> 
 
-        <h2 class="address"> Check out our Reviews! </h2>
-        <div id = "Address-Information">
-            <p1>
-               Add reviews here.
-            </p1>
-        </div>
+        <h2 class="Reviews"> Check out our Reviews! </h2>
+        <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="card d-flex mx-auto">
+                      <div class="card-image">
+                          <img class="img-fluid d-flex mx-auto" src="https://i.ebayimg.com/images/g/PCEAAOSwQF5eKBdg/s-l1200.jpg">
+                      </div>
+                      <div class="card-text">
+                          <div class="card-title">Stupid Dealership Scammed Me!!</div>
+                          <div class="card-vehicle">Toyota Supra Mk4</div>
+                          Do not buy from these guys EVER. They sold me a car with bad brakes!!!! I rear ended a BatMobile as
+                          soon as I left the lot! This dealrship is either incompetent or is trying to kill people!
+                      </div>
+                      <div class="footer">
+                          <span id="name">Bruce Wayne<br></span>
+                          <span id="review-value">Rating = 1/5</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card d-flex mx-auto">
+                      <div class="card-image">
+                          <img class="img-fluid d-flex mx-auto" src="https://i.ytimg.com/vi/tn-Z5FHXcBA/hqdefault.jpg">
+                      </div>
+                      <div class="card-text">
+                          <div class="card-title">THISS is the Autozam AZ-1!</div>
+                          <div class="card-vehicle">Mazda Autozam AZ-1</div>
+                          The Autozam AZ-1 is a crazy vehicle -- a tiny, mid-engine sports car with gullwing doors. It's ridiculous 
+                          and very small, but also surprisingly fun -- and today, I'm reviewing it! I'll show you all the quirks and 
+                          features of the AZ-1, and I'm also going to drive the AZ-1 and show you what it's like on the road!
+                      </div>
+                      <div class="footer">
+                          <span id="name">Doug DeMuro<br></span>
+                          <span id="review-value">Rating = 5/5</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card d-flex mx-auto ">
+                      <div class="card-image">
+                          <img class="img-fluid d-flex mx-auto" src="https://live.staticflickr.com/65535/51736789889_1a0923bd19_b.jpg">
+                      </div>
+                      <div class="card-text">
+                          <div class="card-title">Gets the Job Done.</div>
+                          <div class="card-vehicle">BMW Z8</div>
+                          The name is Bond. James Bond. The Z8 is an excellent car and burning rubber hit all the marks with no
+                          exceptions. After a trip to Q's garage this bad boy helped me tear up the streets of Azerbaijan like 
+                          no car ever could. No regrets, its still a poverty beamer tho.
+                      </div>
+                      <div class="footer">
+                          <span id="name">James Bond<br></span>
+                          <span id="review-value">Rating = 4/5</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
 
-
-
+<section>
 <h2 class="d-flex mt-3 border-top"> Leave a Review!
 </h2>
 
 <form id ="review-form">
     <div>
-        <label for="Rating">Rating</label>
-        <div class="rating">
+      <label for="Rating" class="rating-label">Rating</label>
+      <div class="rating">
             <input type="radio" id="star1" name="Rating" value="1">
             <label for="star1" title="1 star"></label>
             <input type="radio" id="star2" name="Rating" value="2">

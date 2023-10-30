@@ -40,23 +40,28 @@ nav {
 
 /* Navbar End */
 
-h2.address{
-    text-align: center;
-    padding: 20px;
+img{
+    width: 300px;
+    height: 300px;
+
+}
+.card-title {
+    font-weight: bold;
 }
 
-h2.phone{
-    text-align: center;
-    padding: 20px;
+.card-vehicle {
+    font-style: italic;
+    margin-bottom: 20px;
 }
 
-#Address-Information{
-    text-align: center;
+.footer{
+    margin-top: 20px;
 }
 
-#Phone-Information {
-    text-align: center;
+#review-value {
+    font-weight: bold;
 }
+
 
 form {
     border: 1px solid #000000;
@@ -71,6 +76,12 @@ label{
 
 
 /* Style the rating stars */
+
+.rating-label {
+    display: flex;
+    margin-left:200px;
+}
+
 .rating {
     display: flex;
     justify-content: center;
