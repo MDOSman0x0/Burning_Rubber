@@ -1,0 +1,21 @@
+form {
+
+    padding: 20px;
+    text-align: center;
+
+}
+input[type = "text"][id = "searchBar"] {
+    margin-bottom: 30px;
+    margin-left: 10px;
+    width: 50%;
+}
+
+.btn[type = "submit"]{
+    margin-top: 20px;
+    width: 100px;
+    padding: 10px;
+    margin-bottom: 50px;
+    border:1px solid black;
+    background-color: rgb(91, 91, 91);
+    color: white
+}
