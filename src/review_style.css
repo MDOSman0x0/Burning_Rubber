@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1.about-title {
+    background-color: rgba(95, 5, 5, 0.919);
+    background-blend-mode: luminosity;
+    text-align-last: center;
+    color:rgba(237, 216, 186, 0.892);
+    padding: 3%;
+    margin: 0px;
+}
+
+/* Navbar Start */
+
+nav {
+    background-color: black;
+    background-image: url(fire_banner.png);
+    background-position-y: bottom;
+    background-size: 100px;
+    background-repeat: repeat-x;
+}
+
+#tabDealership:hover {
+    color: red;
+}
+
+#tabHome:hover {
+    color: red;
+}
+
+#tabReview:hover {
+    color: red;
+}
+
+#tabAbout:hover {
+    color: red;
+}
+
+/* Navbar End */
+
+img{
+    width: 300px;
+    height: 300px;
+
+}
+.card-title {
+    font-weight: bold;
+}
+
+.card-vehicle {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.footer{
+    margin-top: 20px;
+}
+
+#review-value {
+    font-weight: bold;
+}
+
+
+form {
+    border: 1px solid #000000;
+    padding: 20px;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+label{
+    font-style: italic;
+}
+
+
+/* Style the rating stars */
+
+.rating-label {
+    display: flex;
+    margin-left:200px;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-image: url('emptyredstar.png'); /* Unselected star image */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.rating input:checked + label,
+.rating input:checked + label ~ input + label {
+    background-image: url('filledredstar.png'); /* Selected star image */
+}
+
+/* Set the star image width and height */
+.rating label {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+
+input[type = "text"][id = "name"] {
+    margin-bottom: 30px;
+    width: 50%;
+}
+
+input[type = "text"][id = "vehicle"] {
+    margin-bottom: 30px;
+    width: 50%;
+}
+
+textarea[name = "comments"]{
+    width: 50%;
+    margin-right: 30px;
+}
+
+.btn[type = "submit"]{
+    margin-top: 20px;
+    width: 150px;
+    padding: 10px;
+    border:1px solid black;
+    background-color: orange; 
+    font-weight: bold;
+    color: white
+}
+
+textarea{
+    width: 50%;
+    padding: 30px;
+}
+
+.message{
+    padding: 10px;
+}
+
+.error{
+    color: white;
+    background-color:red;
+    margin-top: 10px;
+    padding: 10px;
+    border:1px solid black;
+}
+
