@@ -10,13 +10,13 @@
 }
 
 #searchFilter {
-    padding: 10px 300px;
+    padding: 10px 20%;
 }
 
 /* Search Tab Start */
 
 #searchTabContent {
-    margin: 0px 500px;
+    margin: 0px 25%;
     padding: 30px;
     background-color: rgba(233, 172, 172, 0.705);
 }
