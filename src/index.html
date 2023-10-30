@@ -51,7 +51,7 @@
 
   </header>
 
-  <div id="featuredVehicles" class="container-fluid d-inline-flex p-2 justify-content-center">
+  <div id="featuredVehicles" class="d-flex justify-content-center">
     <h1 class="border-5">
       Featured Vehicles
     </h1>
@@ -94,6 +94,70 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
+    </div>
+
+    <div id="introduction" class="d-flex justify-content-center">
+      Welcome to the most awespiring dealership you'll ever visit.
+    </div>
+
+    <div id="searchFilter" class="input-group mb-3">
+      <input class="form-control" type="text" placeholder="🔎︎ Search for Make, Model, Year, Price ... ">
+      <button id="searchButton" class="btn btn-outline-danger" type="button">Search</button>
+    </div>
+    
+    <!-- <ul class="nav nav-tabs justify-content-center" id="searchTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="makeTab" data-bs-toggle="tab" data-bs-target="#makeTab" type="button" role="tab" aria-controls="makeTabPane" aria-selected="false">Make</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="modelTab" data-bs-toggle="tab" data-bs-target="#modelTab" type="button" role="tab" aria-controls="modelTabPane" aria-selected="false">Model</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="yearTab" data-bs-toggle="tab" data-bs-target="#yearTab" type="button" role="tab" aria-controls="yearTabPane" aria-selected="false">Year</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="searchTabContent">
+      <div class="tab-pane fade" id="makeTabPane" role="tabpanel" aria-labelledby="makeTab" tabindex="0">Make</div>
+      <div class="tab-pane fade" id="modelTabPane" role="tabpanel" aria-labelledby="modelTab" tabindex="0">Model</div>
+      <div class="tab-pane fade" id="yearTabPane" role="tabpanel" aria-labelledby="yearTab" tabindex="0">Year</div>
+    </div> -->
+
+    <ul class="nav nav-tabs justify-content-center" id="searchTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="type-tab" data-bs-toggle="tab" data-bs-target="#type-tab-pane" type="button" role="tab" aria-controls="type-tab-pane" aria-selected="true">Type</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="price-tab" data-bs-toggle="tab" data-bs-target="#price-tab-pane" type="button" role="tab" aria-controls="price-tab-pane" aria-selected="false">Price</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="mpg-tab" data-bs-toggle="tab" data-bs-target="#mpg-tab-pane" type="button" role="tab" aria-controls="mpg-tab-pane" aria-selected="false">MPG</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="searchTabContent">
+      <div class="tab-pane fade show active" id="type-tab-pane" role="tabpanel" aria-labelledby="type-tab" tabindex="0">
+        <div class="d-flex align justify-content-evenly">
+          <button type="button" class="btn btn-danger">Sports</button>
+          <button type="button" class="btn btn-danger">Truck</button>
+          <button type="button" class="btn btn-danger">Van</button>
+          <button type="button" class="btn btn-danger">SUV</button>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="price-tab-pane" role="tabpanel" aria-labelledby="price-tab" tabindex="0">
+        <div class="d-flex align justify-content-evenly">
+          <button type="button" class="btn btn-danger">Under $20K</button>
+          <button type="button" class="btn btn-danger">Under $40K</button>
+          <button type="button" class="btn btn-danger">Under $60K</button>
+          <button type="button" class="btn btn-danger">Under $100K</button>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="mpg-tab-pane" role="tabpanel" aria-labelledby="mpg-tab" tabindex="0">
+        <div class="d-flex align justify-content-evenly">
+          <button type="button" class="btn btn-danger">>15 MPG</button>
+          <button type="button" class="btn btn-danger">>20 MPG</button>
+          <button type="button" class="btn btn-danger">>25 MPG</button>
+          <button type="button" class="btn btn-danger">>30 MPG</button>
+        </div>
+      </div>
     </div>
   
     <footer class="d-flex align-items-center justify-content-center mt-3 border-top position-static fixed-bottom"> <p class ="text-muted"> Copyright &copy; Burning Rubber 2023</p> </footer>
