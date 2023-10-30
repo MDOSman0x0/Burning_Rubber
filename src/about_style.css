@@ -1,8 +1,33 @@
-h2 {
-    margin: 1% 5px;
-    padding: 1% 5px;
+#info-block {
+    padding: 10px;
+    margin: 20px 40px; 
 }
 
-#whoWeAre_desc {
-    margin: 1% 20px; 
+#info-block .section-head  {
+    text-align: center;
+}
+
+#info-block .description {
+    position: static;
+    text-align: center;
+}
+
+#info-block #first-info-block {
+    padding: 0px 0px 40px 0px;
+}
+
+#info-block #second-info-block {
+    padding: 0px 0px 40px 0px;
+}
+
+#info-block #contact-info {
+    text-align: center;
+}
+
+#info-block #hazmat-guy {
+    text-align: center;
+}
+
+#info-block #hazmat-motor-caption {
+    text-align: center;
 }
