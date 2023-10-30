@@ -7,6 +7,11 @@
     text-align: center;
 }
 
+#info-block .description {
+    position: static;
+    text-align: center;
+}
+
 #info-block #first-info-block {
     padding: 0px 0px 40px 0px;
 }
@@ -20,5 +25,9 @@
 }
 
 #info-block #hazmat-guy {
+    text-align: center;
+}
+
+#info-block #hazmat-motor-caption {
     text-align: center;
 }
