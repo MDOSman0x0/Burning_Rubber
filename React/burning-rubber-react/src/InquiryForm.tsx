@@ -7,14 +7,14 @@ return (
         <h1>Email Inquiry</h1>
         <form>
         <label> Full Name </label>
-        <input type="text" required/>
+        <input type="text" required placeholder='Name'/>
 
 
         <label> Email </label>
-        <input type="text" required/>
+        <input type="text" required placeholder='Email'/>
 
         <label> Budget </label>
-        <input type="text" required/>
+        <input type="text" required placeholder='Budget'/>
 
         <label> Important Details </label>
         <textarea required> </textarea>
