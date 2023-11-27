@@ -76,16 +76,19 @@ function Header() {
                     label="Email address"
                     className="mb-3"
                   >
-                    <Form.Control type="email" placeholder="name@example.com" />
+                    <Form.Control
+                      required
+                      type="email"
+                      placeholder="name@example.com"
+                    />
                   </FloatingLabel>
                   <FloatingLabel controlId="floatingPassword" label="Password">
-                    <Form.Control type="password" placeholder="Password" />
+                    <Form.Control
+                      required
+                      type="password"
+                      placeholder="Password"
+                    />
                   </FloatingLabel>
-                  <br />
-                  <Form.Text>
-                    Don't have account? Sign Up <a href="#">Here</a>!
-                  </Form.Text>
-                  <br />
                   <br />
                   <Button variant="outline-danger" type="submit">
                     Sign In
