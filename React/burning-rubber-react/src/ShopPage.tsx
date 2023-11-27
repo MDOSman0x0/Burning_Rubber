@@ -4,7 +4,6 @@ function ShopPage() {
   return (
     <>
       <Header />
-      <p>Shop</p>
     </>
   );
 }
