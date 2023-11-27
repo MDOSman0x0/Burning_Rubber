@@ -3,10 +3,6 @@ import "./HomePage_style.css";
 function FeaturedVehicles() {
   return (
     <>
-      <div id="featuredVehicles" className="d-flex justify-content-center">
-        <h1 className="border-5">Featured Vehicles</h1>
-      </div>
-
       <div id="carShowcase" className="carousel slide">
         <div className="carousel-indicators">
           <button
@@ -38,8 +34,8 @@ function FeaturedVehicles() {
               alt="..."
             />
             <div className="carousel-caption d-none d-md-block">
-              <h5>This is a Toyota Hilux</h5>
-              <p>Invincible</p>
+              <h5>Featured Vehicle</h5>
+              <p>Toyota Hilux</p>
             </div>
           </div>
           <div className="carousel-item">
@@ -49,8 +45,8 @@ function FeaturedVehicles() {
               alt="..."
             />
             <div className="carousel-caption d-none d-md-block">
-              <h5>Toyota Forerunner</h5>
-              <p>Invincible</p>
+              <h5>Featured Vehicle</h5>
+              <p>Toyota Forerunner</p>
             </div>
           </div>
           <div className="carousel-item">
@@ -60,8 +56,8 @@ function FeaturedVehicles() {
               alt="..."
             />
             <div className="carousel-caption d-none d-md-block">
-              <h5>Lambourghini Tractor</h5>
-              <p>You don't see this everyday</p>
+              <h5>Featured Vehicle</h5>
+              <p>Lambourghini Tractor</p>
             </div>
           </div>
         </div>

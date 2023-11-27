@@ -1,6 +1,16 @@
 import "./Header_style.css";
+import { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import Form from "react-bootstrap/Form";
+import FloatingLabel from "react-bootstrap/FloatingLabel";
 
 function Header() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <>
       <h1 id="title-bar">
@@ -51,13 +61,46 @@ function Header() {
                 </a>
               </li>
             </ul>
-            <button
-              id="loginBtn"
-              className="btn btn-outline-danger"
-              type="button"
-            >
-              Login
-            </button>
+            <Button variant="outline-danger" onClick={handleShow}>
+              Sign In
+            </Button>
+
+            <Modal show={show} onHide={handleClose} centered>
+              <Modal.Header closeButton>
+                <Modal.Title>Please Sign In</Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <Form>
+                  <FloatingLabel
+                    controlId="floatingInput"
+                    label="Email address"
+                    className="mb-3"
+                  >
+                    <Form.Control
+                      required
+                      type="email"
+                      placeholder="name@example.com"
+                    />
+                  </FloatingLabel>
+                  <FloatingLabel controlId="floatingPassword" label="Password">
+                    <Form.Control
+                      required
+                      type="password"
+                      placeholder="Password"
+                    />
+                  </FloatingLabel>
+                  <br />
+                  <Button variant="outline-danger" type="submit">
+                    Sign In
+                  </Button>
+                </Form>
+              </Modal.Body>
+              <Modal.Footer>
+                <Button variant="dark" onClick={handleClose}>
+                  Cancel
+                </Button>
+              </Modal.Footer>
+            </Modal>
           </div>
         </div>
       </nav>

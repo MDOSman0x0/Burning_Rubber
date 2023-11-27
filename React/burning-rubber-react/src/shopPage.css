@@ -1,0 +1,31 @@
+#search-form {
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  #searchBox {
+    margin-bottom: 30px;
+    margin-left: 10px;
+    width: 50%;
+  }
+  
+  #srchBtn {
+    margin: 20px 0;
+    background: linear-gradient(to right, yellow, orange, red);
+    color:black;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  

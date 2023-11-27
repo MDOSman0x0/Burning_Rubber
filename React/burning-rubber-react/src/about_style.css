@@ -1,0 +1,37 @@
+#info-block {
+  padding: 10px;
+  margin: 20px 40px;
+}
+
+#info-block .section-head {
+  text-align: center;
+}
+
+#info-block .description {
+  position: static;
+  text-align: center;
+  border: 1px solid red;
+  background-color: rgb(255, 171, 171);
+}
+
+#info-block #first-info-block {
+  padding: 0px 0px 40px 0px;
+}
+
+#info-block #second-info-block {
+  padding: 0px 0px 40px 0px;
+}
+
+#info-block #contact-info {
+  text-align: center;
+  border: 1px solid red;
+  background-color: rgb(255, 171, 171);
+}
+
+#info-block #hazmat-guy {
+  text-align: center;
+}
+
+#info-block #hazmat-motor-caption {
+  text-align: center;
+}
