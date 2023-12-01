@@ -1,5 +1,5 @@
 import "./Header_style.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
@@ -7,9 +7,25 @@ import FloatingLabel from "react-bootstrap/FloatingLabel";
 
 function Header() {
   const [show, setShow] = useState(false);
+  const [showSignUp, setSignUP] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const signUPShow = () => setSignUP(true);
+  const signUpClose = () => setSignUP(false);
+
+  let [users, setUsers] = useState([]);
+  useEffect(() => {
+    getUsers();
+  }, []);
+
+  let getUsers = async () => {
+    let response = await fetch("http://127.0.0.1:8000/users/");
+    let data = await response.json();
+    console.log("data:", data);
+    setUsers(data);
+  };
 
   return (
     <>
@@ -90,6 +106,11 @@ function Header() {
                     />
                   </FloatingLabel>
                   <br />
+                  <Form.Text>
+                    Don't have account? Sign Up <a onClick={signUPShow}>Here</a>
+                    !
+                  </Form.Text>
+                  <br />
                   <Button variant="outline-danger" type="submit">
                     Sign In
                   </Button>
@@ -97,6 +118,55 @@ function Header() {
               </Modal.Body>
               <Modal.Footer>
                 <Button variant="dark" onClick={handleClose}>
+                  Cancel
+                </Button>
+              </Modal.Footer>
+            </Modal>
+
+            <Modal
+              show={showSignUp}
+              onHide={signUpClose}
+              onShow={handleClose}
+              centered
+            >
+              <Modal.Header closeButton>
+                <Modal.Title>Sign Up</Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <Form>
+                  <FloatingLabel
+                    controlId="floatingInput"
+                    label="Your Name"
+                    className="mb-3"
+                  >
+                    <Form.Control required type="text" placeholder="John Doe" />
+                  </FloatingLabel>
+                  <FloatingLabel
+                    controlId="floatingInput"
+                    label="Email address"
+                    className="mb-3"
+                  >
+                    <Form.Control
+                      required
+                      type="email"
+                      placeholder="name@example.com"
+                    />
+                  </FloatingLabel>
+                  <FloatingLabel controlId="floatingPassword" label="Password">
+                    <Form.Control
+                      required
+                      type="password"
+                      placeholder="Password"
+                    />
+                  </FloatingLabel>
+                  <br />
+                  <Button variant="outline-danger" type="submit">
+                    Sign Up
+                  </Button>
+                </Form>
+              </Modal.Body>
+              <Modal.Footer>
+                <Button variant="dark" onClick={signUpClose}>
                   Cancel
                 </Button>
               </Modal.Footer>
