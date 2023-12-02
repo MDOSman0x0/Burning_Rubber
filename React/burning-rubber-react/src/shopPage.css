@@ -7,3 +7,7 @@
   box-sizing: border-box;
 }
 
+.searchBar{
+  text-align: center;
+  margin: 20px auto;
+}
