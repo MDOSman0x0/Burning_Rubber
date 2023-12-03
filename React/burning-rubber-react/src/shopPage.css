@@ -5,6 +5,14 @@
   border: 1px solid black;
   box-shadow: 0 0 25px rgba(255, 3, 3, 0.336);
   box-sizing: border-box;
+  
+}
+
+#carEntry {
+
+  display: flex;
+  justify-content: center;
+
 }
 
 #searchBar {

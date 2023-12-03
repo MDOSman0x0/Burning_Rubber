@@ -49,7 +49,7 @@ class ShopPage extends React.Component {
           />
         </div>
         <div id="shopContainer" className="container">
-          <div className="row">
+          <div id = "carEntry" className="row">
             {searchCars.map((output, id) => (
               <div className="col-md-10 mb-5" key={id}>
                 <div className="card text-center">
