@@ -1,4 +1,4 @@
-import Header from "./Header";
+// import Header from "./Header";
 import FeaturedVehicles from "./FeaturedVehicles";
 import SearchBar from "./SearchBar";
 import "./HomePage_style.css";
@@ -6,7 +6,7 @@ import "./HomePage_style.css";
 function HomePage() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <FeaturedVehicles />
       <SearchBar />
       <footer className="d-flex align-items-center justify-content-center mt-3 border-top position-static fixed-bottom">
