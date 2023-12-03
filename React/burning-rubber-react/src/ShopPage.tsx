@@ -23,9 +23,9 @@ class ShopPage extends React.Component {
       .catch((err) => {});
   }
 
-  handleSearchChange = (event) => {
+  searchingChange = (e) => {
     this.setState({
-      search: event.target.value,
+      search: e.target.value,
     });
   };
 
@@ -45,7 +45,7 @@ class ShopPage extends React.Component {
             type="search"
             placeholder="Search make or model"
             value={this.state.search}
-            onChange={this.handleSearchChange}
+            onChange={this.searchingChange}
           />
         </div>
         <div id="shopContainer" className="container">
@@ -57,9 +57,6 @@ class ShopPage extends React.Component {
                   <div className="card-body">
                     <h2 className="card-title">{output["make"]}</h2>
                     <h3 className="card-subtitle">{output["type"]}</h3>
-                    <a href="#" className="mt-1 btn btn-danger">
-                      Add To Cart
-                    </a>
                   </div>
                 </div>
               </div>
