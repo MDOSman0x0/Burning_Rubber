@@ -15,6 +15,11 @@
 
 }
 
+#picture {
+
+  aspect-ratio: 16/9;
+}
+
 #searchBar {
   text-align: center;
   margin: 20px auto;

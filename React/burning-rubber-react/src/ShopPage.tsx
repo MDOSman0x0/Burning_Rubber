@@ -51,9 +51,9 @@ class ShopPage extends React.Component {
         <div id="shopContainer" className="container">
           <div id = "carEntry" className="row">
             {searchCars.map((output, id) => (
-              <div className="col-md-10 mb-5" key={id}>
+              <div className="col-md-6 mb-5" key={id}>
                 <div className="card text-center">
-                  <img className="card-img-top" src={output["img"]} />
+                  <img id = "picture" className="card-img-top" src={output["img"]} />
                   <div className="card-body">
                     <h2 className="card-title">{output["make"]} {output["type"]}</h2>
                     <h4 className="card-subtitle text-muted">{output["typecar"]}</h4>
