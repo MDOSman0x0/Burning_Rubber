@@ -13,7 +13,7 @@ class ReactView(APIView):
     serializer_class = ReactSerializer
 
     def get(self, request):
-        output = [{"make":output.make, "type":output.type, "img":output.img}
+        output = [{"make":output.make, "type":output.type, "typecar":output.typecar, "img":output.img, 'price':output.price, 'mpg':output.mpg}
                   for output in React.objects.all()]
         return Response(output)
     
