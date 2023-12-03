@@ -9,7 +9,9 @@ function AboutPage() {
       <div id="info-block">
         <div id="first-info-block">
           <h2 className="section-head">
-            <strong>Who We Are</strong>
+            <img width="50" src="src/assets/RB_Skull.gif" alt="Siren Skull Head"/>
+            <strong>  Who We Are  </strong>
+            <img width="50" src="src/assets/RB_Skull.gif" alt="Siren Skull Head"/>
           </h2>
           <p className="description">
           <strong>
@@ -84,7 +86,9 @@ function AboutPage() {
         </div>
 
         <p id="hazmat-motor-caption">
-          Checkout this badass hazmat dude rippin rubber while on fire.
+          <img width="50" src="src/assets/RetroFire.gif" alt="Siren Skull Head"/>
+          <strong>!!!CHECKOUT THIS BADASS HAZMAT DUDE RIPPIN RUBBER!!!</strong>
+          <img width="50" src="src/assets/RetroFire.gif" alt="Siren Skull Head"/>
         </p>
       </div>
 
