@@ -33,7 +33,7 @@ class ShopPage extends React.Component {
     const searchCars = this.state.details.filter(
       (vehicle) =>
         vehicle.make.includes(this.state.search) ||
-        vehicle.type.includes(this.state.search)
+        vehicle.type.includes(this.state.search) || vehicle.typecar.includes(this.state.search)
     );
 
     return (
@@ -43,7 +43,7 @@ class ShopPage extends React.Component {
           <FaSearch id="search-icon" />
           <input
             type="search"
-            placeholder="Search make or model"
+            placeholder="Search"
             value={this.state.search}
             onChange={this.searchingChange}
           />
@@ -55,8 +55,10 @@ class ShopPage extends React.Component {
                 <div className="card text-center">
                   <img className="card-img-top" src={output["img"]} />
                   <div className="card-body">
-                    <h2 className="card-title">{output["make"]}</h2>
-                    <h3 className="card-subtitle">{output["type"]}</h3>
+                    <h2 className="card-title">{output["make"]} {output["type"]}</h2>
+                    <h4 className="card-subtitle text-muted">{output["typecar"]}</h4>
+                    <h5 className="card-subtitle mt-2">MPG: {output["mpg"]}</h5>
+                    <p className="card-text mt-2">Price: ${output["price"]}</p>
                   </div>
                 </div>
               </div>
