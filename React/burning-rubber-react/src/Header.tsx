@@ -7,10 +7,6 @@ import Form from "react-bootstrap/Form";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import { Link, Outlet } from "react-router-dom";
 
-axios.defaults.xsrfCookieName = "csrftoken";
-axios.defaults.xsrfHeaderName = "X-CSRFToken";
-axios.defaults.withCredentials = true;
-
 const client = axios.create({
   baseURL: "http://127.0.0.1:7000",
 });
@@ -25,8 +21,7 @@ function Header() {
   const signUPShow = () => setSignUP(true);
   const signUpClose = () => setSignUP(false);
 
-  const [currentUser, setCurrentUser] = useState();
-  const [registrationToggle, setRegistrationToggle] = useState(false);
+  const [currentUser, setCurrentUser] = useState("");
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -35,10 +30,10 @@ function Header() {
     client
       .get("/api/user")
       .then(function (res) {
-        setCurrentUser(true);
+        return setCurrentUser(true);
       })
       .catch(function (error) {
-        setCurrentUser(false);
+        return setCurrentUser(false);
       });
   }, []);
 
@@ -57,7 +52,7 @@ function Header() {
             password: password,
           })
           .then(function (res) {
-            setCurrentUser(true);
+            return setCurrentUser;
           });
       });
   }
@@ -70,14 +65,14 @@ function Header() {
         password: password,
       })
       .then(function (res) {
-        setCurrentUser(true);
+        return setCurrentUser(true);
       });
   }
 
   function submitLogout(e) {
     e.preventDefault();
     client.post("/api/logout", { withCredentials: true }).then(function (res) {
-      setCurrentUser(false);
+      return setCurrentUser(false);
     });
   }
 

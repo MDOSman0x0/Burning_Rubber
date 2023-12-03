@@ -39,7 +39,7 @@ class ShopPage extends React.Component {
     return (
       <div>
         {/* <Header/> */}
-        <div className="searchBar">
+        <div id="searchBar">
           <FaSearch id="search-icon" />
           <input
             type="search"
@@ -48,7 +48,7 @@ class ShopPage extends React.Component {
             onChange={this.handleSearchChange}
           />
         </div>
-        <div className="container">
+        <div id="shopContainer" className="container">
           <div className="row">
             {searchCars.map((output, id) => (
               <div className="col-md-10 mb-5" key={id}>

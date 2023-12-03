@@ -1,13 +1,13 @@
-.container {
+#shopContainer {
   padding: 20px;
   margin: 20px auto;
-  display: flex; 
-  border: 1px solid black; 
+  display: flex;
+  border: 1px solid black;
   box-shadow: 0 0 25px rgba(255, 3, 3, 0.336);
   box-sizing: border-box;
 }
 
-.searchBar{
+#searchBar {
   text-align: center;
   margin: 20px auto;
 }
