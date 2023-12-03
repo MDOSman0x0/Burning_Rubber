@@ -11,6 +11,7 @@
   position: static;
   text-align: center;
   border: 1px solid red;
+  color: darkred;
   background-color: rgb(255, 171, 171);
 }
 
@@ -25,6 +26,7 @@
 #info-block #contact-info {
   text-align: center;
   border: 1px solid red;
+  color: darkred;
   background-color: rgb(255, 171, 171);
 }
 
