@@ -1,10 +1,10 @@
-import Header from "./Header";
+// import Header from "./Header";
 import "./about_style.css";
 
 function AboutPage() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
 
       <div id="info-block">
         <div id="first-info-block">
