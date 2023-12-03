@@ -12,6 +12,7 @@ function AboutPage() {
             <strong>Who We Are</strong>
           </h2>
           <p className="description">
+          <strong>
             Thank you soliciting this awesome website created by a team of five
             highly motivated college students from San Diego, California. This
             website is the culmination of months of effort spent on a project
@@ -20,8 +21,12 @@ function AboutPage() {
             Engineering. All of us are majoring in Computer Engineering and we
             hope that the fruits of our labor are exceptional, provided our
             website is best suited for your needs as a car and motorcycle
-            enthusiast. That said, I hope you enjoy your time at Burning Rubber
+            enthusiast.  For the frontend of the website, our team created a react application with bootstrap
+            which provides a framework for building the UI, with several containers and components at our
+            disposal.  Django is used as the backend framework for data management.  
+            With all this said, I hope you enjoy your time at Burning Rubber
             as much as we have enjoyed creating it for you.
+          </strong>
           </p>
         </div>
 
@@ -30,14 +35,16 @@ function AboutPage() {
             <strong>Not Your Typical Dealership</strong>
           </h2>
           <p className="description">
+          <strong>
             I'm sure after having visited several other car and motorcylcle
             dealerships you might be wondering, what seperates this site from
             the others? Well to be frank, we try to bring humor and authenticity
             to the foreground of our work, making the user experience stand out
             from the rest. While we do use some common contemporary web
-            development components, like from bootstrap, we try to blend these
+            development components, we try to blend these
             modern design concepts with the ruggid old internet approach of
             ordered chaos.
+          </strong>
           </p>
         </div>
 
@@ -78,7 +85,6 @@ function AboutPage() {
 
         <p id="hazmat-motor-caption">
           Checkout this badass hazmat dude rippin rubber while on fire.
-          <br />I mean look at it. Stay rad my dude!
         </p>
       </div>
 
