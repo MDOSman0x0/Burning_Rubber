@@ -8,7 +8,7 @@ const ReviewForm = () => {
   const[fullName, setfullName] = useState("")
   const[vehicle, setVehicle] = useState("")
   const[comments, setComments] = useState("")
-  const[image, setImage] = useState(null)
+  const[image, setImage] = useState("")
 
   const AddReview = async() => {
     let formField = new FormData()
@@ -17,7 +17,7 @@ const ReviewForm = () => {
     formField.append('fullName', fullName)
     formField.append('vehicle', vehicle)
     formField.append('comments', comments)
-    formField.append('image', image)
+    formField.append('img', image)
   
 
     await axios({
