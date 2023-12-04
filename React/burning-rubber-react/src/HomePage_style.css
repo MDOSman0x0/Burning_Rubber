@@ -32,7 +32,14 @@
   padding-right: 0px;
   padding-left: 0px;
   margin-bottom: 10px;
-  height: 50%;
+  height: 800px;
+  width: auto;
+  aspect-ratio: 16/9;
+}
+
+#carShowcase img {
+  width: auto;
+  height: 800px;
 }
 
 /* Carosel End */
