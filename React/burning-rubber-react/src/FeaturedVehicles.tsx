@@ -29,35 +29,35 @@ function FeaturedVehicles() {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img
-              src="src/assets/toyota_hilux.jpg"
+              src="src/assets/cybertruck.jpg"
               className="d-block w-100 rounded"
               alt="..."
             />
             <div className="carousel-caption d-none d-md-block">
               <h5>Featured Vehicle</h5>
-              <p>Toyota Hilux</p>
+              <p>Tesla Cybertruck</p>
             </div>
           </div>
           <div className="carousel-item">
             <img
-              src="src/assets/forerunner.jpg"
+              src="src/assets/kawasaki.jpg"
               className="d-block w-100 rounded"
               alt="..."
             />
             <div className="carousel-caption d-none d-md-block">
               <h5>Featured Vehicle</h5>
-              <p>Toyota Forerunner</p>
+              <p>Kawasaki 1000SX</p>
             </div>
           </div>
           <div className="carousel-item">
             <img
-              src="src/assets/lambo_tractor.jpg"
+              src="src/assets/Lamborghini.jpg"
               className="d-block w-100 rounded"
               alt="..."
             />
             <div className="carousel-caption d-none d-md-block">
               <h5>Featured Vehicle</h5>
-              <p>Lambourghini Tractor</p>
+              <p>Lamborghini Aventador</p>
             </div>
           </div>
         </div>
