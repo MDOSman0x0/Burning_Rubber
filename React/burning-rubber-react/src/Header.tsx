@@ -26,6 +26,8 @@ function Header() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
+  const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
   useEffect(() => {
     client
       .get("/api/user")
@@ -52,7 +54,8 @@ function Header() {
             password: password,
           })
           .then(function (res) {
-            return setCurrentUser;
+            setSignUP(false);
+            return setCurrentUser(true);
           });
       });
   }
@@ -65,6 +68,7 @@ function Header() {
         password: password,
       })
       .then(function (res) {
+        setShow(false);
         return setCurrentUser(true);
       });
   }
@@ -128,6 +132,7 @@ function Header() {
             </ul>
             {currentUser ? (
               <form id="logoutButton" onSubmit={(e) => submitLogout(e)}>
+                <div className="d-inline-flex">Welcome, {email}</div>
                 <Button variant="outline-primary" type="submit">
                   Log Out
                 </Button>
@@ -168,7 +173,10 @@ function Header() {
                   </FloatingLabel>
                   <br />
                   <Form.Text>
-                    Don't have account? Sign Up <a onClick={signUPShow}>Here</a>
+                    Don't have account? Sign Up{" "}
+                    <a id="signUpText" onClick={signUPShow}>
+                      Here
+                    </a>
                     !
                   </Form.Text>
                   <br />

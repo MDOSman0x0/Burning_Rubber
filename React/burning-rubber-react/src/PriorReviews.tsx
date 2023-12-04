@@ -1,11 +1,11 @@
 import axios from "axios";
 import React from "react";
-import Carousel from 'react-bootstrap/Carousel';
+import Carousel from "react-bootstrap/Carousel";
 import "./PriorReviews.css";
 import { Card } from "react-bootstrap";
 
 class PriorReviews extends React.Component {
-  state = {details:[],}
+  state = { details: [] };
 
   componentDidMount() {
     let data;
@@ -21,23 +21,25 @@ class PriorReviews extends React.Component {
   }
 
   render() {
-    return(
+    return (
       <Carousel>
-  <Carousel.Item className="row">
-  {this.state.details.map((output,id) => (
-    <Card style={{ width: "18rem" }}>
-    <img src={output["img"]} />
-            <div>
-              <h3> {output["vehicle"]}</h3>
-              <h5>Rating: {output["rating"]}/5</h5>
-              <p>{output["comments"]}</p>
-              <h6>{output["fullName"]} on {output["created"]}</h6>
+        <Carousel.Item className="row">
+          {this.state.details.map((output, id) => (
+            <Card style={{ width: "18rem" }}>
+              <img src={output["img"]} />
+              <div>
+                <h3> {output["vehicle"]}</h3>
+                <h5>Rating: {output["rating"]}/5</h5>
+                <p>{output["comments"]}</p>
+                <h6>
+                  {output["fullName"]} on {output["created"]}
+                </h6>
               </div>
-    </Card>
-      ) )}
-  </Carousel.Item>
-</Carousel>
-    )
+            </Card>
+          ))}
+        </Carousel.Item>
+      </Carousel>
+    );
   }
 }
 
