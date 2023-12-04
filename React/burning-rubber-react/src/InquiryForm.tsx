@@ -25,9 +25,9 @@ return (
         <label> Full Name </label>
         <input type="text" name = "Name" required placeholder='Name'/>
         <label> Email </label>
-        <input type="text" name = "Email" required placeholder='Email'/>
+        <input type="email" name = "Email" required placeholder='Email'/>
         <label> Budget </label>
-        <input type="text" name = "Budget" required placeholder='Budget'/>
+        <input type="number" name = "Budget" required placeholder='Budget'/>
         <label> Important Details </label>
         <textarea name = "Details"> </textarea>
 
