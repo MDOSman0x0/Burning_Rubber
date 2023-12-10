@@ -14,8 +14,6 @@ function InquiryForm(){
           }, (error) => {
               console.log(error.text);
           });
-
-          alert("Email Sent");
       };
 
 return (
