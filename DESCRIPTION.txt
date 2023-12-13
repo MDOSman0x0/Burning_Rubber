@@ -11,7 +11,7 @@ INTERFACES:
 BACKEND COMPOSITION:
 . Base Django 
 . Django REST framework
-. PostgreSQL database
+. SQLite database
 
 [TEXT]
 -------------
