@@ -11,7 +11,7 @@ INTERFACES:
 BACKEND COMPOSITION:
 . Base Django 
 . Django REST framework
-. PostgreSQL database
+. SQLite database
 
 [TEXT]
 -------------
@@ -23,6 +23,4 @@ for particular item.  The shop page includes all automobiles and motorcycles cur
 The inquiry page includes a fill-in form for user provided input on site performance and issues.
 The review page provides user ratings and comments on automobiles/motorcycles.
 The about page provides a brief description of the developers of the website, as well as the mission/purpose of the website.
-
-Functionalities of Website:
 
