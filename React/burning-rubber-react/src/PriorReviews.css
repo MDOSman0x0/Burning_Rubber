@@ -1,14 +1,18 @@
-.slide{
-    display: flex;
-    justify-content: center;
+.slide {
+  display: flex;
+  justify-content: center;
 }
 .card-container {
-    display: flex;
-    flex-wrap: nowrap; 
-    overflow-x: auto; 
-    margin: -8px; 
-  }
-  
-  .card-container > * {
-    margin: 8px; 
-  }
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  margin: -8px;
+}
+
+.card-container > * {
+  margin: 8px;
+}
+
+#revPic {
+  aspect-ratio: 16/9;
+}

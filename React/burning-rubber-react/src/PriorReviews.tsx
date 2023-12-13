@@ -42,7 +42,11 @@ class PriorReviews extends React.Component {
             <div className="card-container row justify-content-center">
               {group.map((output, id) => (
                 <Card key={id} style={{ width: "18rem" }}>
-                  <img src={output["img"]} alt={output["vehicle"]} />
+                  <img
+                    id="revPic"
+                    src={output["img"]}
+                    alt={output["vehicle"]}
+                  />
                   <div>
                     <h3>{output["vehicle"]}</h3>
                     <h5>Rating: {output["rating"]}/5</h5>
