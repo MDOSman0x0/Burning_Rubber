@@ -1,0 +1,28 @@
+[ATTRIBUTES]
+-------------
+WEBSITE NAME: Burning Rubber
+FRONTEND COMPOSITION:
+. HTML
+. CSS
+. BOOTSTRAP
+. REACT
+INTERFACES:
+. Axios
+BACKEND COMPOSITION:
+. Base Django 
+. Django REST framework
+. PostgreSQL database
+
+[TEXT]
+-------------
+Description of Website:
+Burning Rubber is an automobile and motorcycle dealership website stylized with the look and feel of the old internet.
+The website is composed of a home/index page, a shop/dealership page, an inquiry page, a review page, and an about page.
+The home/index page provides a brief slideshow presentation of cars/motorcycles prevalent on the dealership a a search bar
+for particular item.  The shop page includes all automobiles and motorcycles currently being sold on the website.
+The inquiry page includes a fill-in form for user provided input on site performance and issues.
+The review page provides user ratings and comments on automobiles/motorcycles.
+The about page provides a brief description of the developers of the website, as well as the mission/purpose of the website.
+
+Functionalities of Website:
+
