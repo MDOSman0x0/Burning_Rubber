@@ -6,6 +6,7 @@ import InquiryPage from "./InquiryPage";
 import ShopPage from "./ShopPage";
 import AboutPage from "./AboutPage";
 import Header from "./Header";
+import ErrorPage from "./ErrorPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 
@@ -20,6 +21,7 @@ export default function Routing() {
             <Route path="/inquiry" element={<InquiryPage />} />
             <Route path="/review" element={<ReviewPage />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="*" element={<ErrorPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
